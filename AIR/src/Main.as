@@ -150,13 +150,24 @@ public class Main extends Sprite
 		
 		//----------------------------------------------------------------------
 		
+		var btn0:MySprite = createBtn("rooted? JailBroken?");
+		btn0.addEventListener(MouseEvent.CLICK, isDeviceRooted);
+		_list.add(btn0);
+		
+		function isDeviceRooted(e:MouseEvent):void
+		{
+			C.log("rooted? JailBroken? "+ com.myflashlab.air.extensions.deviceInfo.DeviceInfo.isDeviceRooted());
+		}
+		
+		//----------------------------------------------------------------------
+		
 		var btn1:MySprite = createBtn("get android info");
 		btn1.addEventListener(MouseEvent.CLICK, androidInfo);
 		if(OverrideAir.os == OverrideAir.ANDROID) _list.add(btn1);
 		
 		function androidInfo(e:MouseEvent):void
 		{
-			trace("androidInfo: "+ JSON.stringify(com.myflashlab.air.extensions.deviceInfo.DeviceInfo.androidInfo()));
+			C.log("androidInfo: "+ JSON.stringify(com.myflashlab.air.extensions.deviceInfo.DeviceInfo.androidInfo()));
 		}
 		
 		//---------------------------------------------------------------------
@@ -167,7 +178,7 @@ public class Main extends Sprite
 		
 		function iosInfo(e:MouseEvent):void
 		{
-			trace("iosInfo: "+ JSON.stringify(com.myflashlab.air.extensions.deviceInfo.DeviceInfo.iosInfo()));
+			C.log("iosInfo: "+ JSON.stringify(com.myflashlab.air.extensions.deviceInfo.DeviceInfo.iosInfo()));
 		}
 	}
 	

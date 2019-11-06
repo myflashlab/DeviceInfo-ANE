@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <application xmlns="http://ns.adobe.com/air/application/32.0">
   <id>com.doitflash.deviceInfo</id>
-  <versionNumber>0.0.11</versionNumber>
+  <versionNumber>0.0.12</versionNumber>
   <supportedProfiles>mobileDevice</supportedProfiles>
   <filename>exDeviceInfo</filename>
   <name>Device Info</name>
