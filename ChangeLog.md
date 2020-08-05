@@ -1,4 +1,8 @@
-DeviceInfo AIR Native Extension
+# DeviceInfo AIR Native Extension
+
+*Aug 03, 2020 - v1.0.0*
+- Upgrade dependencies to the latest versions.
+- Fixed some minor issues and refactor native codes.
 
 *Nov 6, 2019 - V0.0.12*
 * Checks if device is rooted/jailbroken or not.
